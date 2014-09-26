@@ -1,0 +1,71 @@
+/* 
+Globals
+	Sass variable, mixins, plugins, etc. that are used throughout the entore site.
+*/
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// Loading Google Fonts
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Slab'), local('JosefinSlab'), url(http://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Slab Bold'), local('JosefinSlab-Bold'), url(http://fonts.gstatic.com/s/josefinslab/v6/NbE6ykYuM2IyEwxQxOIi2BAPw1J91axKNXP_-QX9CC8.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Josefin Slab Italic'), local('JosefinSlab-Italic'), url(http://fonts.gstatic.com/s/josefinslab/v6/etsUjZYO8lTLU85lDhZwUr52ooqJRs02xO3mONBoqeI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika-Bold'), url(http://fonts.gstatic.com/s/signika/v6/7M5kxD4eGxuhgFaIk95pBb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@mixin body-font-regular {
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin body-font-italic {
+    font-family: 'Josefin Slab';
+    font-style: italic;
+    font-weight: 400;
+    
+}
+
+@mixin body-font-bold {
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin headline-font {
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 700;
+}
+
+$color:#242424;
+$color-title: #c45353;
+$background-color: #C12267;
