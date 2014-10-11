@@ -17,55 +17,55 @@ Globals
 
 // Loading Google Fonts
 @font-face {
-  font-family: 'Josefin Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Josefin Slab'), local('JosefinSlab'), url(http://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
-@font-face {
-  font-family: 'Josefin Slab';
+  font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 700;
-  src: local('Josefin Slab Bold'), local('JosefinSlab-Bold'), url(http://fonts.gstatic.com/s/josefinslab/v6/NbE6ykYuM2IyEwxQxOIi2BAPw1J91axKNXP_-QX9CC8.woff) format('woff');
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(http://fonts.gstatic.com/s/crimsontext/v6/rEy5tGc5HdXy56Xvd4f3IxAPw1J91axKNXP_-QX9CC8.woff) format('woff');
 }
 @font-face {
-  font-family: 'Josefin Slab';
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+ font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Josefin Slab Italic'), local('JosefinSlab-Italic'), url(http://fonts.gstatic.com/s/josefinslab/v6/etsUjZYO8lTLU85lDhZwUr52ooqJRs02xO3mONBoqeI.woff) format('woff');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
 @font-face {
-  font-family: 'Signika';
+   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 700;
-  src: local('Signika-Bold'), url(http://fonts.gstatic.com/s/signika/v6/7M5kxD4eGxuhgFaIk95pBb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://fonts.gstatic.com/s/opensans/v10/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
 @mixin body-font-regular {
-    font-family: 'Josefin Slab';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
 }
 
 @mixin body-font-italic {
-    font-family: 'Josefin Slab';
-    font-style: italic;
-    font-weight: 400;
+    font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
     
 }
 
 @mixin body-font-bold {
-    font-family: 'Josefin Slab';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
 }
 
 @mixin headline-font {
-    font-family: 'Signika';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
 }
 
 $color:#242424;
-$color-title: #c45353;
-$background-color: #C12267;
+$color-title: #800080;
+$background-color: #FFA500;

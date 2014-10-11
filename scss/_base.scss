@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
           
        
 h1 {
-    @include fontSize(60px);
+    @include fontSize(80px);
     margin-bottom: 75px;
     text-transform: capitalize;
 }
@@ -53,9 +53,10 @@ title + p {
 
 h2 {
     @include fontSize(40px);
+    color: #800080;
     margin-top: 5px;
     margin-bottom: 8px;
-    text-transform: uppercase;
+    
     //border-bottom: 1px solid $color;
 }
 
@@ -70,6 +71,7 @@ h2 + p {
 
 h3, h4, h5, h6 + p {
     @include fontSize(40px);
+   color: #800080;
 }
 
 h3 {
@@ -77,6 +79,7 @@ h3 {
     margin-top: 5px;
     margin-bottom: 8px;
     text-transform: capitalize;
+    color: #800080;
 }
 
 h3 + p {
@@ -89,6 +92,7 @@ h4 {
     @include fontSize(40px);
     margin-top: 5px;
     margin-bottom: 8px;
+    color: #800080;
 }
 
 h4 + p {
@@ -101,6 +105,7 @@ h5 {
     @include fontSize(40px);
     margin-top: 5px;
     margin-bottom: 8px;
+    color: #800080;
 }
 
 h5 + p {
@@ -113,6 +118,7 @@ h6 {
     @include fontSize(40px);
     margin-top: 5px;
     margin-bottom: 20px;
+    color: #800080;
 }
 
 h6 + p {
@@ -171,19 +177,19 @@ ul {
 //}
 //
 blockquote {
-  color:#ffffff;
+  color:#000000;
     background-color: $background-color;
     padding: 16px;
    margin: 0 0 20px 0;
 }
 //
 blockquote p {
-    color:#ffffff;
+    color:#000000;
     margin-top: 0;
 }
 
 blockquote cite {
-    color:#ffffff;
+    color:#000000;
     display: block;
     @include body-font-bold;
     text-align: right;
@@ -211,22 +217,22 @@ dd {
 
 
 main[role="role"]  {
-    @include fontSize(25px);
+    @include fontSize(20px);
 }
 
 
 header[role="banner"] {
     //border-bottom: 2px #989898 solid;
     //border-top: 2px #989898 solid;
-    color: #0000ff;
+    color: #006400;
     margin: 5px 0;
     padding: 5px 0;
 }
 
 footer[role="contentinfo"] small {
-    //border-top: 1px #989898 solid;
-    //display: block;
-    @include fontSize(14px);
+    border-top: 1px #989898 solid;
+    display: block;
+    @include fontSize(20px);
     margin-bottom: 20px;
     padding-bottom: 20px;
     padding-top: 15px;
